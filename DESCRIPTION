@@ -2,11 +2,13 @@ Package: FarsPackageKarol
 Type: Package
 Title: Fars Package Karol Sandoval
 Version: 0.1.0
-Author: Karol Michelle Sandoval
+Authors@R:
+    c(person(given = "Karol",
+             family = "Sandoval",
+             role = c("aut", "cre"),
+             email = "karol.sandoval@correounivalle.edu.co"))
 Maintainer: Karol Michelle Sandoval <karol.sandoval@correounivalle.edu.co>
-Description: This package contains 5 functions (fars_read, make_filename,
-    fars_read_years, fars_summarize_years and fars_map_state) that allow you to
-    work with databases in zip format.
+Description: This package contains 5 functions that allow you to work with databases in zip format.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
@@ -14,18 +16,18 @@ URL: https://github.com/Karol-sandoval/Fars_Package_Karol
 Suggests: 
     knitr,
     rmarkdown,
-    testthat (>= 3.0.0)
+    testthat 
 VignetteBuilder: knitr
-Imports: dplyr,
-         readr, 
-         base, 
-         tidyr, 
-         maps, 
-         graphics,
-         knitr,
-         rmarkdown,
-         testthat
+Imports: 
+    dplyr,
+    readr,
+    tidyr,
+    graphics,
+    maps,
+    base,
+    roxygen2,
+    knitr,
+    rmarkdown  
 Depends: 
     R (>= 2.10)
 RoxygenNote: 7.1.1
-Config/testthat/edition: 3

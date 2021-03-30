@@ -3,7 +3,7 @@ Type: Package
 Title: Fars Package Karol Sandoval
 Version: 0.1.0
 Author: Karol Michelle Sandoval
-Maintainer: Karol Michelle Sandoval <yourself@somewhere.net>
+Maintainer: Karol Michelle Sandoval <karol.sandoval@correounivalle.edu.co>
 Description: This package contains 5 functions (fars_read, make_filename,
              fars_read_years, fars_summarize_years and fars_map_state) that allow you to
              work with databases in zip format.

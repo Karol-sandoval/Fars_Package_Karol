@@ -1,9 +1,9 @@
 ---
 title: "Using FarsPackage and fars function"
-author: "Karol Michelle Sandoval
+author: "Karol Michelle Sandoval"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Fars_vignette}
+  %\VignetteIndexEntry{Using FarsPackage and fars function}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

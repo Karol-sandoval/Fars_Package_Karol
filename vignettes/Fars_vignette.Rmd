@@ -1,0 +1,68 @@
+---
+title: "Using FarsPackage and fars function"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Fars_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(FarsPackageKarol)
+```
+
+## 1. fars_read
+
+This is a function that allows you to load all types of 
+documents with .csv extension. You can load these documents
+using the filename argument followed by the .csv extension 
+inside double quotes and you will get a data frame in tibble 
+format to work in the console. For example:
+
+```{r setup1,eval = F}
+fars_read("accident_2013.csv.bz2")
+fars_read("accident_2014.csv.bz2")
+```
+
+## 2. make_filename
+
+This function allows you to generate character objects 
+containing a formatted combination of input values. For example:
+
+```{r setup2,eval = F}
+make_filename(2013)
+make_filename(2014)
+```
+
+## 3. fars_read_years 
+
+Function that takes a set of years to generate file names and thus extract the month and year corresponding to each record in the dataset.
+
+```{r setup3,eval = F}
+fars_read_years(c(2013,2014))
+```
+
+## 4. fars_summarize_years
+
+Function that takes a set of years and calls the function fars_read_years, then joins them together and at the end you get a summary of the data.
+
+```{r setup4,eval = F}
+fars_summarize_years(c(2013,2014))
+```
+
+
+## 5. fars_map_state
+
+This function takes the state number and plots the accidents per selected year.
+
+
+```{r setup5,eval = F}
+fars_map_state(1,2013)
+```

@@ -3,7 +3,7 @@ title: "Using FarsPackage and fars function"
 author: "Karol Michelle Sandoval
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Using FarsPackage and fars function}
+  %\VignetteIndexEntry{Fars_vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

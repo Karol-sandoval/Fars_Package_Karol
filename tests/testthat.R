@@ -1,5 +1,11 @@
 library(testthat)
 library(FarsPackageKarol)
+library(dplyr)
+library(readr)
+library(tidyr)
+library(magrittr)
+library(graphics)
+library(maps)
 
 test_check("FarsPackageKarol")
 
@@ -8,8 +14,8 @@ test_that("Make filename test", {
 })
 
 
-test_that("Make filename test error", {
-  expect_that(make_filename,throws_error(make_filename(qwerty)))
+test_that("Make filename test", {
+  expect_equal(make_filename(2014), "accident_2014.csv.bz2")
 })
 
 
